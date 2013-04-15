@@ -1,0 +1,9 @@
+Òöapplication/json{
+        "featureName": "Wallpaper",
+        "featureData": [
+            {
+                 "uri": "file:\/\/\/system\/customize\/resource\/wallpapers_a_00.jpg",
+            	 "src": "\/wallpapers\/wallpapers_a_00.jpg"
+            }
+        ]
+}

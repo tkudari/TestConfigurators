@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="Tejus-Kudaris-MacBook-Pro.local" name="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" tests="13" time="5.114" timestamp="2013-01-09T00:56:40">
+  <properties>
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SAM" value="I897d74d1373" />
+    <property name="env.rvm_bin_path" value="/Users/tejuskudari/.rvm/bin" />
+    <property name="java.home" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home" />
+    <property name="env.ASUS" value="C2OKAS029819" />
+    <property name="env.DISPLAY" value="/tmp/launch-gysmzq/org.x:0" />
+    <property name="env.rvm_src_path" value="/Users/tejuskudari/.rvm/src" />
+    <property name="env.rvm_log_path" value="/Users/tejuskudari/.rvm/log" />
+    <property name="java.endorsed.dirs" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/endorsed" />
+    <property name="env.LOGNAME" value="tejuskudari" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.NEWCASTLE" value="HT27KW300648" />
+    <property name="main.source.dir" value="../main/src" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vendor.url" value="http://www.apple.com/" />
+    <property name="env.HTC" value="HT14MV800018" />
+    <property name="env.TERM_PROGRAM_VERSION" value="273.1" />
+    <property name="java.version" value="1.6.0_33" />
+    <property name="env.ANDROID_HOME" value="/Users/tejuskudari/Downloads/adt-bundle-mac-jb/sdk" />
+    <property name="jikes.class.path" value=":/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-rt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/alt-string.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/charsets.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/classes.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/dt.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jconsole.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/management-agent.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/../Classes/ui.jar" />
+    <property name="env.rvm_docs_path" value="/Users/tejuskudari/.rvm/docs" />
+    <property name="java.vendor.url.bug" value="http://bugreport.apple.com/" />
+    <property name="env.GEM_HOME" value="/Users/tejuskudari/.rvm/gems/ruby-1.9.2-p290@rails3tutorial" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="coberturareport.dir" value="coberturareport" />
+    <property name="env.RUBY_VERSION" value="ruby-1.9.2-p290" />
+    <property name="user.name" value="tejuskudari" />
+    <property name="env.LANG" value="en_US.UTF-8" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="MacRoman" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="main.location" value="../main" />
+    <property name="env.ATRIX" value="TA20708VNV" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="user.timezone" value="" />
+    <property name="env.rvm_patches_path" value="/Users/tejuskudari/.rvm/patches" />
+    <property name="path.separator" value=":" />
+    <property name="env.rvm_ruby_string" value="ruby-1.9.2-p290" />
+    <property name="env.com.apple.java.jvmTask" value="CommandLine_Manual.java" />
+    <property name="env.rvm_gemsets_path" value="/Users/tejuskudari/.rvm/gemsets" />
+    <property name="project.name" value="ra_android_wallpaper_unit_test" />
+    <property name="file.encoding" value="MacRoman" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="env.HOME" value="/Users/tejuskudari" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.dashwire.wallpaper.ConfiguratorRequestReceiverTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/unit_test/junit/TEST-com.dashwire.wallpaper.ConfiguratorRequestReceiverTest.xml crashfile=/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/unit_test/junitvmwatcher236306271935057498.properties propsfile=/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/unit_test/junit2337107393333464315.properties" />
+    <property name="env.__array_start" value="0" />
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="ant.file" value="/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/unit_test/build.xml" />
+    <property name="instrumented.dir" value="instrumented" />
+    <property name="sdk.dir" value="/Users/tejuskudari/Downloads/adt-bundle-mac-jb/sdk" />
+    <property name="java.io.tmpdir" value="/var/folders/Kh/KhsbducHEiG9cilTlTCJK++++TI/-Tmp-/" />
+    <property name="user.language" value="en" />
+    <property name="env.MINE" value="014691060800C015" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="target" value="1.6" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="source" value="1.6" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="env.rvm_verbose_flag" value="0" />
+    <property name="env.__CF_USER_TEXT_ENCODING" value="0x1F5:0:0" />
+    <property name="env.rvm_rubies_path" value="/Users/tejuskudari/.rvm/rubies" />
+    <property name="test.classes.dir" value="bin" />
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16" />
+    <property name="env.rvm_scripts_path" value="/Users/tejuskudari/.rvm/scripts" />
+    <property name="env.rvm_environments_path" value="/Users/tejuskudari/.rvm/environments" />
+    <property name="env.rvm_path" value="/Users/tejuskudari/.rvm" />
+    <property name="env.GEM_PATH" value="/Users/tejuskudari/.rvm/gems/ruby-1.9.2-p290@rails3tutorial:/Users/tejuskudari/.rvm/gems/ruby-1.9.2-p290@global" />
+    <property name="env.DESIRE" value="HT0B4T200070" />
+    <property name="env.rvm_loaded_flag" value="1" />
+    <property name="java.awt.printerjob" value="apple.awt.CPrinterJob" />
+    <property name="ant.file.${project.name}" value="/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/unit_test/build.xml" />
+    <property name="env.rvm_archives_path" value="/Users/tejuskudari/.rvm/archives" />
+    <property name="env.rvm_user_install_flag" value="1" />
+    <property name="ant.file.type.${project.name}" value="file" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on May 17 2012" />
+    <property name="env.rvm_man_path" value="/Users/tejuskudari/.rvm/man" />
+    <property name="env.rvm_help_path" value="/Users/tejuskudari/.rvm/help" />
+    <property name="gopherProxySet" value="false" />
+    <property name="env.rvm_usr_path" value="/Users/tejuskudari/.rvm/usr" />
+    <property name="env.rvm_gems_cache_path" value="/Users/tejuskudari/.rvm/gems/cache" />
+    <property name="os.name" value="Mac OS X" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="env.rvm_version" value="1.8.5" />
+    <property name="mrj.build" value="10M3720" />
+    <property name="env.TERM" value="xterm-color" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="mrj.version" value="1060.1.6.0_33-424" />
+    <property name="java.library.path" value=".:/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
+    <property name="env.rvm_prefix" value="/Users/tejuskudari" />
+    <property name="env.PATH" value="/Users/tejuskudari/dashconfig_android_12_13_2012/dashconfig_android/tools/mac:/opt/local/bin:/opt/local/sbin:/Users/tejuskudari/.rvm/gems/ruby-1.9.2-p290@rails3tutorial/bin:/Users/tejuskudari/.rvm/gems/ruby-1.9.2-p290@global/bin:/Users/tejuskudari/.rvm/rubies/ruby-1.9.2-p290/bin:/Users/tejuskudari/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/X11/bin:/opt/local/bin:/Users/tejuskudari/Dashwire:/Users/tejuskudari/SDK_07_13/android-sdk-macosx/tools:/Users/tejuskudari/SDK_07_13/android-sdk-macosx/platform-tools:/Users/tejuskudari/Dashwire/ShaveDog:/Users/tejuskudari/bin:/Users/tejuskudari/joyent-node-14b7c43:/Users/tejuskudari/Downloads/apktool-install-macosx-r04-brut1:/Users/tejuskudari/redis-2.4.7/src:/Users/tejuskudari/node:/Users/tejuskudari/Downloads/jad158g.mac.intel:/Users/tejuskudari/Downloads:/Users/tejuskudari/Downloads/adt-bundle-mac-jb/sdk:/Users/tejuskudari/Dashwire:/Users/tejuskudari/SDK_07_13/android-sdk-macosx/tools:/Users/tejuskudari/SDK_07_13/android-sdk-macosx/platform-tools:/Users/tejuskudari/Dashwire/ShaveDog:/Users/tejuskudari/bin:/Users/tejuskudari/joyent-node-14b7c43:/Users/tejuskudari/Downloads/apktool-install-macosx-r04-brut1:/Users/tejuskudari/redis-2.4.7/src:/Users/tejuskudari/node:/Users/tejuskudari/Downloads/jad158g.mac.intel:/Users/tejuskudari/Downloads:/Users/tejuskudari/Downloads/adt-bundle-mac-jb/sdk:/Users/tejuskudari/Dashwire:/Users/tejuskudari/SDK_07_13/android-sdk-macosx/tools:/Users/tejuskudari/SDK_07_13/android-sdk-macosx/platform-tools:/Users/tejuskudari/Dashwire/ShaveDog:/Users/tejuskudari/bin:/Users/tejuskudari/joyent-node-14b7c43:/Users/tejuskudari/Downloads/apktool-install-macosx-r04-brut1:/Users/tejuskudari/redis-2.4.7/src:/Users/tejuskudari/node:/Users/tejuskudari/Downloads/jad158g.mac.intel:/Users/tejuskudari/Downloads:/Users/tejuskudari/Downloads/adt-bundle-mac-jb/sdk" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="env.rvm_user_path" value="/Users/tejuskudari/.rvm/user" />
+    <property name="basedir" value="/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/unit_test" />
+    <property name="java.class.version" value="50.0" />
+    <property name="env.SHLVL" value="3" />
+    <property name="ant.home" value="/usr/share/ant" />
+    <property name="test.source.dir" value="src" />
+    <property name="sun.boot.library.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Libraries" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="java.awt.graphicsenv" value="apple.awt.CGraphicsEnvironment" />
+    <property name="env.rvm_env_string" value="ruby-1.9.2-p290@rails3tutorial" />
+    <property name="env.USER" value="tejuskudari" />
+    <property name="env.rvm_examples_path" value="/Users/tejuskudari/.rvm/examples" />
+    <property name="env.TERM_PROGRAM" value="Apple_Terminal" />
+    <property name="env.EXPERIA" value="CB5A1JGSTH" />
+    <property name="env.COMMAND_MODE" value="unix2003" />
+    <property name="ant.project.name" value="${project.name}" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="env.rvm_wrappers_path" value="/Users/tejuskudari/.rvm/wrappers" />
+    <property name="awt.toolkit" value="apple.awt.CToolkit" />
+    <property name="env.MY_RUBY_HOME" value="/Users/tejuskudari/.rvm/rubies/ruby-1.9.2-p290" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="env.JAVA_MAIN_CLASS_94607" value="org.apache.tools.ant.launch.Launcher" />
+    <property name="env.GNEXUS" value="0149BCA70D003011" />
+    <property name="java.ext.dirs" value="/Library/Java/Extensions:/System/Library/Java/Extensions:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext" />
+    <property name="os.version" value="10.6.8" />
+    <property name="user.home" value="/Users/tejuskudari" />
+    <property name="java.vm.vendor" value="Apple Inc." />
+    <property name="coverage.output.dir" value="coverage" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="user.dir" value="/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/main" />
+    <property name="env.PWD" value="/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/unit_test" />
+    <property name="env.rvm_tmp_path" value="/Users/tejuskudari/.rvm/tmp" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="env.TMPDIR" value="/var/folders/Kh/KhsbducHEiG9cilTlTCJK++++TI/-Tmp-/" />
+    <property name="env.GTAB7" value="c0808d81e99b62f" />
+    <property name="env.com.apple.java.jvmMode" value="client" />
+    <property name="java.vm.version" value="20.8-b03-424" />
+    <property name="java.class.path" value="/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/unit_test/bin:/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/unit_test/libs/robolectric-1.2-20121026.220946-163-jar-with-dependencies.jar:/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/unit_test/libs/json-20080701.jar:/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/unit_test/libs/junit-4.10.jar:/Users/tejuskudari/Downloads/adt-bundle-mac-jb/sdk/platforms/android-16/android.jar:/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/shared/ra_configurator/bin/classes.jar:/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/shared/ra_base/bin/classes.jar:/Users/tejuskudari/dashconfig_12_28_2012/dashconfig_android/ra/wallpaper/android/main/bin/classes:/usr/share/java/ant-1.8.2/lib/ant-launcher.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
+    <property name="ant.library.dir" value="/usr/share/ant/lib" />
+    <property name="env.rvm_gems_path" value="/Users/tejuskudari/.rvm/gems" />
+    <property name="os.arch" value="x86_64" />
+    <property name="env.Apple_PubSub_Socket_Render" value="/tmp/launch-7YMjb7/Render" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="ant.core.lib" value="/usr/share/ant/lib/ant.jar" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="env.rvm_reload_flag" value="0" />
+    <property name="file.separator" value="/" />
+    <property name="env.rvm_debug_flag" value="0" />
+    <property name="env.ONES" value="HT23TW113354" />
+    <property name="java.runtime.version" value="1.6.0_33-b03-424-10M3720" />
+    <property name="sun.boot.class.path" value="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsfd.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar:/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/Resources/Java/JavaRuntimeSupport.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/laf.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/sunrsasign.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar:/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar" />
+    <property name="env.SSH_AUTH_SOCK" value="/tmp/launch-3HRoWr/Listeners" />
+    <property name="env.rvm_gemset_name" value="rails3tutorial" />
+    <property name="env.WORKSPACE" value="/Users/tejuskudari/dashconfig_android_12_13_2012/dashconfig_android/" />
+    <property name="env.SVN_EDITOR" value="vim" />
+    <property name="env.rvm_repos_path" value="/Users/tejuskudari/.rvm/repos" />
+    <property name="user.country" value="US" />
+    <property name="env.rvm_lib_path" value="/Users/tejuskudari/.rvm/lib" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.INSTANCE" value="23.21.239.205" />
+    <property name="main.classes.dir" value="../main/bin/classes" />
+    <property name="java.vendor" value="Apple Inc." />
+    <property name="awt.nativeDoubleBuffering" value="true" />
+    <property name="env.FLIER" value="HT15JJN00638" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="env.IRBRC" value="/Users/tejuskudari/.rvm/rubies/ruby-1.9.2-p290/.irbrc" />
+    <property name="sun.arch.data.model" value="64" />
+  </properties>
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="registerReceiver_shouldRegisterForAllIntentFilterActions" time="0.074" />
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="sendBroadcast_shouldSendIntentToEveryInterestedReceiver" time="0.0040" />
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="unregisterReceiver_shouldUnregisterReceiver" time="0.0030" />
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="unregisterReceiver_shouldThrowExceptionWhenReceiverIsNotRegistered" time="0.0050" />
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="broadcastReceivers_shouldBeSharedAcrossContextsPerApplicationContext" time="0.0030" />
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="broadcasts_shouldBeLogged" time="0.0020" />
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="shouldReturnSameApplicationEveryTime" time="0.01" />
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="shouldReturnSameApplicationContextEveryTime" time="0.0020" />
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="shouldReturnSameContentResolverEveryTime" time="0.0060" />
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="shouldReturnSameLocationManagerEveryTime" time="0.035" />
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="shouldReturnSameWifiManagerEveryTime" time="0.0040" />
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="shouldReturnSameAlarmServiceEveryTime" time="0.0030" />
+  <testcase classname="com.dashwire.wallpaper.ConfiguratorRequestReceiverTest" name="shouldReturnAContext" time="0.0020" />
+  <system-out><![CDATA[Warning: an error occurred while binding shadow class: ShadowGeoPoint
+Warning: an error occurred while binding shadow class: ShadowItemizedOverlay
+Warning: an error occurred while binding shadow class: ShadowMapController
+Warning: an error occurred while binding shadow class: ShadowMapActivity
+Warning: an error occurred while binding shadow class: ShadowMapView
+Warning: an error occurred while binding shadow class: ShadowOverlayItem
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

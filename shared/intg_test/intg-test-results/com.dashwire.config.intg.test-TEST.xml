@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites>
+  <testsuite errors="0" failures="11" name="com.dashwire.config.intg.test.IntegrationTest" package="com.dashwire.config.intg.test" tests="11" time="75.633" timestamp="2013-02-01T22:01:44">
+    <testcase classname="com.dashwire.config.intg.test.IntegrationTest" name="test200_validateRingtone" time="17.931">
+      <failure>junit.framework.ComparisonFailure: Comparing ringtones expected:&lt;[Boötes]&gt; but was:&lt;[AT&amp;T_Firefly]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:259)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:226)
+	at com.dashwire.config.intg.test.IntegrationTest.test200_validateRingtone(IntegrationTest.java:158)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+	at junit.framework.TestResult.run(TestResult.java:118)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)
+	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+</failure>
+    </testcase>
+    <testcase classname="com.dashwire.config.intg.test.IntegrationTest" name="test201_validateRingtone" time="5.601">
+      <failure>junit.framework.ComparisonFailure: Comparing ringtones expected:&lt;[Big Eas]y&gt; but was:&lt;[AT&amp;T_Firefl]y&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:259)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:226)
+	at com.dashwire.config.intg.test.IntegrationTest.test201_validateRingtone(IntegrationTest.java:165)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+	at junit.framework.TestResult.run(TestResult.java:118)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)
+	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+</failure>
+    </testcase>
+    <testcase classname="com.dashwire.config.intg.test.IntegrationTest" name="test202_validateRingtone" time="5.447">
+      <failure>junit.framework.ComparisonFailure: Comparing ringtones expected:&lt;[Bollywood]&gt; but was:&lt;[AT&amp;T_Firefly]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:259)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:226)
+	at com.dashwire.config.intg.test.IntegrationTest.test202_validateRingtone(IntegrationTest.java:171)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+	at junit.framework.TestResult.run(TestResult.java:118)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)
+	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+</failure>
+    </testcase>
+    <testcase classname="com.dashwire.config.intg.test.IntegrationTest" name="test203_validateRingtone" time="5.687">
+      <failure>junit.framework.ComparisonFailure: Comparing ringtones expected:&lt;[Club Cubano]&gt; but was:&lt;[AT&amp;T_Firefly]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:259)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:226)
+	at com.dashwire.config.intg.test.IntegrationTest.test203_validateRingtone(IntegrationTest.java:177)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+	at junit.framework.TestResult.run(TestResult.java:118)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)
+	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+</failure>
+    </testcase>
+    <testcase classname="com.dashwire.config.intg.test.IntegrationTest" name="test204_validateRingtone" time="6.122">
+      <failure>junit.framework.ComparisonFailure: Comparing ringtones expected:&lt;A[quila]&gt; but was:&lt;A[T&amp;T_Firefly]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:259)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:226)
+	at com.dashwire.config.intg.test.IntegrationTest.test204_validateRingtone(IntegrationTest.java:183)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+	at junit.framework.TestResult.run(TestResult.java:118)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)
+	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+</failure>
+    </testcase>
+    <testcase classname="com.dashwire.config.intg.test.IntegrationTest" name="test300_validateRingtone" time="6.33">
+      <failure>junit.framework.ComparisonFailure: Comparing ringtones expected:&lt;[Canopus]&gt; but was:&lt;[James Bond Theme]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:259)
+	at com.dashwire.config.intg.test.IntegrationTest.runNotificationTest(IntegrationTest.java:220)
+	at com.dashwire.config.intg.test.IntegrationTest.test300_validateRingtone(IntegrationTest.java:191)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+	at junit.framework.TestResult.run(TestResult.java:118)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)
+	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+</failure>
+    </testcase>
+    <testcase classname="com.dashwire.config.intg.test.IntegrationTest" name="test301_validateRingtone" time="6.066">
+      <failure>junit.framework.ComparisonFailure: Comparing ringtones expected:&lt;[Highwir]e&gt; but was:&lt;[James Bond Them]e&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:259)
+	at com.dashwire.config.intg.test.IntegrationTest.runNotificationTest(IntegrationTest.java:220)
+	at com.dashwire.config.intg.test.IntegrationTest.test301_validateRingtone(IntegrationTest.java:196)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+	at junit.framework.TestResult.run(TestResult.java:118)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)
+	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+</failure>
+    </testcase>
+    <testcase classname="com.dashwire.config.intg.test.IntegrationTest" name="test302_validateRingtone" time="6.064">
+      <failure>junit.framework.ComparisonFailure: Comparing ringtones expected:&lt;[Betelgeus]e&gt; but was:&lt;[James Bond Them]e&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:259)
+	at com.dashwire.config.intg.test.IntegrationTest.runNotificationTest(IntegrationTest.java:220)
+	at com.dashwire.config.intg.test.IntegrationTest.test302_validateRingtone(IntegrationTest.java:202)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+	at junit.framework.TestResult.run(TestResult.java:118)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)
+	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+</failure>
+    </testcase>
+    <testcase classname="com.dashwire.config.intg.test.IntegrationTest" name="test303_validateRingtone" time="6.391">
+      <failure>junit.framework.ComparisonFailure: Comparing ringtones expected:&lt;[Notification]&gt; but was:&lt;[James Bond Theme]&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:259)
+	at com.dashwire.config.intg.test.IntegrationTest.runNotificationTest(IntegrationTest.java:220)
+	at com.dashwire.config.intg.test.IntegrationTest.test303_validateRingtone(IntegrationTest.java:208)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+	at junit.framework.TestResult.run(TestResult.java:118)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)
+	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+</failure>
+    </testcase>
+    <testcase classname="com.dashwire.config.intg.test.IntegrationTest" name="test304_validateRingtone" time="5.92">
+      <failure>junit.framework.ComparisonFailure: Comparing ringtones expected:&lt;[Look At M]e&gt; but was:&lt;[James Bond Them]e&gt;
+	at junit.framework.Assert.assertEquals(Assert.java:85)
+	at com.dashwire.config.intg.test.IntegrationTest.runRingtoneTest(IntegrationTest.java:259)
+	at com.dashwire.config.intg.test.IntegrationTest.runNotificationTest(IntegrationTest.java:220)
+	at com.dashwire.config.intg.test.IntegrationTest.test304_validateRingtone(IntegrationTest.java:214)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+	at junit.framework.TestResult.run(TestResult.java:118)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)
+	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+</failure>
+    </testcase>
+    <testcase classname="com.dashwire.config.intg.test.SmokeTest" name="test_RingtoneNotificationWallpaper" time="4.074">
+      <failure>junit.framework.AssertionFailedError: Get Started Image not found
+	at junit.framework.Assert.fail(Assert.java:50)
+	at com.dashwire.config.intg.test.R2G_UI_Helper.tapOnGetStarted(R2G_UI_Helper.java:58)
+	at com.dashwire.config.intg.test.R2G_UI_Helper.sendR2GConfig(R2G_UI_Helper.java:23)
+	at com.dashwire.config.intg.test.SmokeTest.test_RingtoneNotificationWallpaper(SmokeTest.java:141)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+	at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+	at android.test.ActivityInstrumentationTestCase2.runTest(ActivityInstrumentationTestCase2.java:192)
+	at junit.framework.TestCase.runBare(TestCase.java:134)
+	at junit.framework.TestResult$1.protect(TestResult.java:115)
+	at junit.framework.TestResult.runProtected(TestResult.java:133)
+	at junit.framework.TestResult.run(TestResult.java:118)
+	at junit.framework.TestCase.run(TestCase.java:124)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:190)
+	at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:175)
+	at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:555)
+	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1584)
+</failure>
+    </testcase>
+    <properties />
+    <system-out />
+    <system-err />
+  </testsuite>
+</testsuites>

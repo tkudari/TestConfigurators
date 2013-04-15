@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/OuterLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dashwall_client_bg_generic" >
+    
+    <RelativeLayout
+        android:id="@+id/ShortBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="10dp"
+        android:orientation="vertical"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/SprintIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/sprint_logo"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LongBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="60dp"
+        android:orientation="vertical"
+        android:background="@color/white"  >
+
+        <ImageView
+            android:id="@+id/ImageIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DetailedText2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/welcome_icons" />
+
+        <TextView
+            android:id="@+id/DetailedText1"
+            style="@style/explanation"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="10dp"
+            android:gravity="left"
+            android:text="@string/welcome_detail1"
+            android:textAlignment="gravity"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+       <TextView
+            android:id="@+id/DetailedText2"
+            style="@style/explanation"
+            android:layout_below="@+id/DetailedText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="left"
+            android:text="@string/welcome_detail2"
+            android:textAlignment="gravity"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ImageCloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:src="@drawable/dashwall_cloud_generic" />
+
+</FrameLayout>

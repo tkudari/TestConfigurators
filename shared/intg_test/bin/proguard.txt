@@ -1,0 +1,25 @@
+# view AndroidManifest.xml #generated:21
+-keep class com.dashwire.config.testingHelper { <init>(...); }
+
+# view 1184x720/res/layout-1184x720/completed.xml #generated:2
+# view 1184x720/res/layout-1184x720/login.xml #generated:2
+# view 1280x720/res/layout-1280x720/completed.xml #generated:2
+# view 1280x720/res/layout-1280x720/login.xml #generated:2
+# view 888x540/res/layout-888x540/completed.xml #generated:2
+# view 888x540/res/layout-888x540/login.xml #generated:2
+# view es-1184x720/res/layout-es-1184x720/completed.xml #generated:2
+# view es-1184x720/res/layout-es-1184x720/login.xml #generated:2
+# view es-1280x720/res/layout-es-1280x720/completed.xml #generated:2
+# view es-888x540/res/layout-es-888x540/completed.xml #generated:2
+# view es-888x540/res/layout-es-888x540/login.xml #generated:2
+# view es-large/res/layout-es-large/completed.xml #generated:2
+# view es/res/layout-es/completed.xml #generated:2
+# view large/res/layout-large/completed.xml #generated:2
+# view large/res/layout-large/login.xml #generated:2
+# view res/layout/completed.xml #generated:2
+# view res/layout/login.xml #generated:2
+-keep class com.dashwire.config.ui.OverrideBackKeyLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:12
+-keep class pl.polidea.instrumentation.PolideaInstrumentationTestRunner { <init>(...); }
+

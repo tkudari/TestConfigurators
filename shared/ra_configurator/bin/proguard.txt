@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:18
+-keep class com.dashwire.configurator.ConfigurationRequestReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class com.dashwire.configurator.controller.ConfiguratorControllerService { <init>(...); }
+

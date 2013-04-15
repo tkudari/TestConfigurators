@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="custom_screen_shot_main">
+
+     <target name="install" depends="uninstall">
+        <exec executable="adb" failonerror="true">
+            <arg value="install" />
+            <arg value="${out.final.file}"/>
+        </exec>
+    </target>   
+
+    <target name="uninstall">
+        <exec executable="adb" failonerror="true">
+            <arg value="uninstall" />
+            <arg value="com.dashwire.screenshot.test" />
+        </exec>
+    </target>
+    
+</project>

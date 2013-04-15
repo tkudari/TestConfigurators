@@ -1,0 +1,9 @@
+ÒÔapplication/json{
+	    "ringtones": [
+            {
+                "uri": "file:///system/media/audio/ringtones/ATT_Firefly.ogg",
+                "type": "call",
+                "title": "AT&T Firefly"
+            }
+        ]
+}

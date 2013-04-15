@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Telcel TouchWall</string>
+
+    <string name="welcome_detail1">Simplemente acerca tu teléfono al contenido que quieres en tu unidad.</string>
+    <string name="welcome_detail2">Nosotros nos encargamos del resto.</string>
+
+    <string name="finish_button_text">Salir</string>
+    <string name="personalizing_short">Personalizando </string>
+    <string name="personalizing_detail1">Configurando </string>
+    <string name="personalizing_detail2">. No te vayas!. Solo tomara un momento &#8230;</string>
+    <string name="success_detail"> a sido instaldo.\n\nListo para el siguiente elemento.</string>
+    <string name="failed_detail1">Intentamos configurar </string>
+    <string name="failed_detail2">, pero algo falló. Porfavor intenta de nuevo.</string>
+
+    <string name="success_short">Listo!</string>
+    <string name="failure_short">A ocurrido un error!</string>
+    <string name="progress_short">Configurando &#8230;</string>
+    
+    <string name="wallpaper">Papel tapiz</string>
+    <string name="ringtone">Sonido de llamada</string>
+    <string name="notification">Tono de notificación</string>
+    <string name="shortcut">Acceso directo</string>
+    <string name="widget">Widget</string>
+    <string name="invalidFeature">Elemento Invalido</string>
+     
+    <string name="custom_error_msg1_ws">Lo siento, no hay espacio! \n\n No pudimos encontrar espacio libre </string>
+    <string name="custom_error_msg2_ws">\n\nPorfavor borra algun widgets o acceso directo en tu pantalla e intenta de nuevo</string>
+
+    <string name="tytext1">Gracias!</string>
+    <string name="tytext2">Puedes regresa cuando quieras agregar o cambiar contenido.</string>
+    <string name="tytext3">Cerrando en </string>
+    
+    <string name="second">segundo</string>
+    <string name="seconds">segundos</string>
+</resources>

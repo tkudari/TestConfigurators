@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ra_account_android_main_custom">
+
+    <!-- version-tag: custom -->
+    <target name="account-android-to-library">
+        <propertyfile
+                file="${env.WORKSPACE}/ra/accounts/android/main/project.properties"
+                comment="Adding Android Wallpaper APK as Library Project">
+            <entry key="android.library" value="true"/>
+        </propertyfile>
+    </target>
+
+</project>

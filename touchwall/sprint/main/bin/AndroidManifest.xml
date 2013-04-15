@@ -1,0 +1,101 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2949" android:versionName="1.0.0.2949" package="com.dashwire.touchwall.sprint">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    
+    <uses-sdk android:minSdkVersion="10" android:targetSdkVersion="17"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@android:style/Theme.NoTitleBar">
+    
+        <activity android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.dashwire.testing.helper.ui.TestingNFCIntentActivity">
+            <intent-filter>
+                <action android:name="com.dashwire.testing.NFC"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:name="com.dashwire.testing.helper.controller.TestingHelperService">
+            	<intent-filter>
+                	<action android:name="com.dashwire.testing.helper.SERVICE">
+                	</action>
+            	</intent-filter>
+        </service>
+        <receiver android:name="com.dashwire.testing.helper.screenshot.ScreenShotResultReceiver">
+            <intent-filter>
+                <action android:name="com.dashwire.screenshot.success"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.dashwire.testing.helper.mock.AssetGathererResultReceiver">
+            <intent-filter>
+                <action android:name="com.dashwire.asset.gatherer.intent.action.EXTRACTION_RESULT"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.dashwire.wallpaper.WallpaperConfigurator">
+            <intent-filter>
+                <action android:name="com.dashwire.configure.intent.Wallpaper"/>
+            </intent-filter>
+        </service>
+        
+        <service android:exported="true" android:name="com.dashwire.ringtone.RingtoneConfigurator">
+            <intent-filter>
+                <action android:name="com.dashwire.configure.intent.Ringtone"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.dashwire.homeItem.HomeItemConfigurator">
+            <intent-filter>
+                <action android:name="com.dashwire.configure.intent.Widget"/>
+                <action android:name="com.dashwire.configure.intent.Shortcut"/>
+            </intent-filter>
+        </service> 
+        <service android:exported="true" android:name="com.dashwire.configurator.controller.ConfiguratorControllerService">
+            <intent-filter>
+                <action android:name="com.dashwire.configurator.controller.service"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.dashwire.configurator.ConfigurationRequestReceiver" android:permission="com.dashwire.config.permission.CONFIG">
+            <intent-filter>
+                <action android:name="com.dashwire.feature.intent.CONFIGURE"/>
+                <category android:name="com.dashwire.configurator"/>
+            </intent-filter>
+        </receiver>
+        <activity android:launchMode="singleInstance" android:name="com.dashwire.nfc.ui.SplashActivity" android:noHistory="true" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>	
+        </activity>
+        <activity android:launchMode="singleInstance" android:name="com.dashwire.nfc.ui.WelcomeActivity" android:noHistory="true" android:screenOrientation="portrait">	
+        </activity>
+        <activity android:name="com.dashwire.nfc.ui.NFCTriggerActivity" android:noHistory="true" android:screenOrientation="portrait">	
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>	
+                <data android:mimeType="application/json"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>	
+        </activity>
+        <activity android:name="com.dashwire.nfc.ui.ConfigurationStatusActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/noAnimTheme">	
+        </activity>
+        <activity android:launchMode="singleInstance" android:name="com.dashwire.nfc.ui.ThankYouActivity" android:noHistory="true" android:screenOrientation="portrait">	
+        </activity>
+        <service android:name="com.dashwire.nfc.controller.NFCControllerService">
+            <intent-filter>
+                <action android:name="com.dashwire.nfc.controller.service"/>
+            </intent-filter>
+        </service> 
+        <receiver android:name="com.dashwire.nfc.ConfigurationResultReceiver">
+            <intent-filter>
+                <action android:name="com.dashwire.feature.intent.CONFIGURATION_RESULT"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <uses-permission android:name="com.dashwire.config.permission.CONFIG"/>
+    <permission android:name="com.dashwire.config.permission.CONFIG" android:protectionLevel="signature">
+    </permission>
+
+    <uses-permission android:name="android.permission.NFC"/>
+	<uses-feature android:name="android.hardware.nfc" android:required="true"/>
+
+</manifest>

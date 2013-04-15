@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="var" path="ANDROID_HOME/platforms/android-16/android.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ra_base"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ra_configurator"/>
+	<classpathentry kind="var" path="RA_SHARED_LIBRARY/robolectric-1.2-20121026.220946-163-jar-with-dependencies.jar"/>
+	<classpathentry kind="var" path="RA_SHARED_LIBRARY/junit-4.10.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ra_accounts_android_main"/>
+	<classpathentry kind="var" path="ANDROID_HOME"/>
+	<classpathentry kind="var" path="RA_SHARED_LIBRARY"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

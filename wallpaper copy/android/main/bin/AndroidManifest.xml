@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.dashwire.wallpaper">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15"/>
+
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+      
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name">
+        <service android:exported="true" android:name="com.dashwire.wallpaper.WallpaperConfigurator">
+            <intent-filter>
+                <action android:name="com.dashwire.configure.intent.Wallpaper"/>
+            </intent-filter>
+        </service> 
+        <service android:exported="true" android:name="com.dashwire.configurator.controller.ConfiguratorControllerService">
+            <intent-filter>
+                <action android:name="com.dashwire.configurator.controller.service"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.dashwire.configurator.ConfigurationRequestReceiver" android:permission="com.dashwire.config.permission.CONFIG">
+            <intent-filter>
+                <action android:name="com.dashwire.feature.intent.CONFIGURE"/>
+                <category android:name="com.dashwire.configurator"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+    <uses-permission android:name="com.dashwire.config.permission.CONFIG"/>
+    <permission android:name="com.dashwire.config.permission.CONFIG" android:protectionLevel="signature">
+    </permission>
+
+</manifest>

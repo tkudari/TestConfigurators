@@ -1,0 +1,52 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.dashwire.features.testing">
+
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15"/>
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.dashwire.config.permission.CONFIG"/>
+    
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+           <service android:enabled="true" android:name="com.dashwire.features.testing.controller.FeaturesTestingControllerService">
+            	<intent-filter>
+                	<action android:name="com.dashwire.feature.CONTROLLER_SERVICE">
+                	</action>
+            	</intent-filter>
+           </service>
+        <receiver android:name="com.dashwire.features.testing.FeatureTestingRequestReceiver">
+            <intent-filter>
+                <action android:name="com.dashwire.features.testing.fctnl.test"/>
+                <action android:name="com.dashwire.features.testing.intg.test"/>
+            </intent-filter>
+        </receiver> 
+        <receiver android:name="com.dashwire.features.testing.FeatureConfigurationResultReceiver">
+            <intent-filter>
+                <action android:name="com.dashwire.feature.intent.CONFIGURATION_RESULT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.dashwire.testing.helper.ui.TestingNFCIntentActivity">
+            <intent-filter>
+                <action android:name="com.dashwire.testing.NFC"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:name="com.dashwire.testing.helper.controller.TestingHelperService">
+            	<intent-filter>
+                	<action android:name="com.dashwire.testing.helper.SERVICE">
+                	</action>
+            	</intent-filter>
+        </service>
+        <receiver android:name="com.dashwire.testing.helper.screenshot.ScreenShotResultReceiver">
+            <intent-filter>
+                <action android:name="com.dashwire.screenshot.success"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.dashwire.testing.helper.mock.AssetGathererResultReceiver">
+            <intent-filter>
+                <action android:name="com.dashwire.asset.gatherer.intent.action.EXTRACTION_RESULT"/>
+            </intent-filter>
+        </receiver> 
+    </application>
+    <permission android:name="com.dashwire.config.permission.CONFIG" android:protectionLevel="signature">
+    </permission>
+
+</manifest>

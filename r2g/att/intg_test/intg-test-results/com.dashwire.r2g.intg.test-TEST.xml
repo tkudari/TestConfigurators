@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites>
+  <testsuite errors="0" failures="0" name="com.dashwire.r2g.intg.test.SmokeTest" package="com.dashwire.r2g.intg.test" tests="1" time="90.752" timestamp="2013-04-08T20:24:51">
+    <testcase classname="com.dashwire.r2g.intg.test.SmokeTest" name="test_SmokeTest" time="90.752" />
+    <properties />
+    <system-out />
+    <system-err />
+  </testsuite>
+</testsuites>

@@ -1,0 +1,99 @@
+{
+    "one_contact": [
+		{
+			"name":"Grant",
+			"given":"Grantster",
+			"family":"Musick",
+			"email":"blah@blah.com",
+			"phones":[
+				{
+					"type":"home",
+					"number":"5551111"
+
+				},
+				{
+					"type":"work",
+					"number":"5552222"
+
+				},
+				{
+					"type":"mobile",
+					"number":"5553333"
+				}
+			]
+		}
+    ],
+
+    "multi_contact": [
+		{
+			"given":"amy",
+			"family":"adams",
+			"email":"",
+			"phones":[
+				{
+					"type":"home",
+					"number":"5551111"
+
+				}
+			]
+		},
+		{
+			"given":"amy",
+			"family":"adams",
+			"email":"",
+			"phones":[
+				{
+					"type":"home",
+					"number":"5552222"
+
+				}
+			]
+		},
+		{
+			"given":"Amy",
+			"family":"Adams",
+			"email":"",
+			"phones":[
+				{
+					"type":"work",
+					"number":"5553333"
+				}
+			]
+		},
+		{
+			"given":"bob",
+			"family":"brown",
+			"email":"",
+			"phones":[
+				{
+					"type":"home",
+					"number":"5551111"
+
+				}
+			]
+		},
+		{
+			"given":"bob",
+			"family":"brown",
+			"email":"",
+			"phones":[
+				{
+					"type":"home",
+					"number":"5552222"
+
+				}
+			]
+		},
+		{
+			"given":"Bob",
+			"family":"Brown",
+			"email":"",
+			"phones":[
+				{
+					"type":"work",
+					"number":"5553333"
+				}
+			]
+		}
+    ]
+}

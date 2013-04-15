@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="intg_test_custom">
+
+  <!-- version-tag: custom -->
+        <target name="test" depends="-test-project-check"
+                description="Runs tests from the package defined in test.package property">
+        <property name="test.runner" value="pl.polidea.instrumentation.PolideaInstrumentationTestRunner" />
+
+        <if condition="${project.is.test}">
+        <then>
+            <property name="tested.project.absolute.dir" location="${tested.project.dir}" />
+
+            <!-- Application package of the tested project extracted from its manifest file -->
+            <xpath input="${tested.project.absolute.dir}/AndroidManifest.xml"
+                    expression="/manifest/@package" output="tested.project.app.package" />
+
+            <if condition="${emma.enabled}">
+                <then>
+                    <getprojectpaths projectPath="${tested.project.absolute.dir}"
+                            binOut="tested.project.out.absolute.dir"
+                            srcOut="tested.project.source.absolute.dir" />
+
+                    <getlibpath projectPath="${tested.project.absolute.dir}"
+                            libraryFolderPathOut="tested.project.lib.source.path"
+                            leaf="@{source.dir}" />
+
+                </then>
+            </if>
+
+        </then>
+        <else>
+            <!-- this is a test app, the tested package is the app's own package -->
+            <property name="tested.project.app.package" value="${project.app.package}" />
+
+            <if condition="${emma.enabled}">
+                <then>
+                    <property name="tested.project.out.absolute.dir" value="${out.absolute.dir}" />
+                    <property name="tested.project.source.absolute.dir" value="${source.absolute.dir}" />
+
+                    <getlibpath
+                            libraryFolderPathOut="tested.project.lib.source.path"
+                            leaf="@{source.dir}" />
+
+                </then>
+            </if>
+
+        </else>
+        </if>
+
+        <property name="emma.dump.file"
+                value="/data/data/${tested.project.app.package}/coverage.ec" />
+
+        <if condition="${emma.enabled}">
+            <then>
+                <echo>Running tests...</echo>
+                <run-tests-helper emma.enabled="true">
+                    <extra-instrument-args>
+                        <arg value="-e" />
+                           <arg value="coverageFile" />
+                           <arg value="${emma.dump.file}" />
+                    </extra-instrument-args>
+                </run-tests-helper>
+
+                <echo level="info">Settting permission to download the coverage file...</echo>
+                <exec executable="${adb}" failonerror="true">
+                    <arg line="${adb.device.arg}" />
+                    <arg value="shell" />
+                    <arg value="run-as" />
+                    <arg value="${tested.project.app.package}" />
+                    <arg value="chmod" />
+                    <arg value="644" />
+                    <arg value="${emma.dump.file}" />
+                </exec>
+                <echo level="info">Downloading coverage file into project directory...</echo>
+                <exec executable="${adb}" failonerror="true">
+                    <arg line="${adb.device.arg}" />
+                    <arg value="pull" />
+                    <arg value="${emma.dump.file}" />
+                    <arg path="${out.absolute.dir}/coverage.ec" />
+                </exec>
+
+                <pathconvert property="tested.project.lib.source.path.value" refid="tested.project.lib.source.path">
+                    <firstmatchmapper>
+                        <regexpmapper from='^([^ ]*)( .*)$$' to='"\1\2"'/>
+                        <identitymapper/>
+                    </firstmatchmapper>
+                </pathconvert>
+
+                <echo level="info">Extracting coverage report...</echo>
+                <emma>
+                    <property name="report.html.out.encoding" value="UTF-8" />
+                    <report sourcepath="${tested.project.source.absolute.dir}:${tested.project.lib.source.path.value}"
+                            verbosity="${verbosity}">
+                        <!-- TODO: report.dir or something like should be introduced if necessary -->
+                        <infileset file="${out.absolute.dir}/coverage.ec" />
+                        <infileset file="${tested.project.out.absolute.dir}/coverage.em" />
+                        <!-- TODO: reports in other, indicated by user formats -->
+                        <html outfile="${out.absolute.dir}/coverage.html" />
+                        <txt outfile="${out.absolute.dir}/coverage.txt" />
+                        <xml outfile="${out.absolute.dir}/coverage.xml" />
+                   </report>
+                </emma>
+                <echo level="info">Cleaning up temporary files...</echo>
+                <delete file="${out.absolute.dir}/coverage.ec" />
+                <delete file="${tested.project.out.absolute.dir}/coverage.em" />
+                <exec executable="${adb}" failonerror="true">
+                    <arg line="${adb.device.arg}" />
+                    <arg value="shell" />
+                    <arg value="run-as" />
+                    <arg value="${tested.project.app.package}" />
+                    <arg value="rm" />
+                    <arg value="${emma.dump.file}" />
+                </exec>
+                <echo level="info">Saving the coverage reports in ${out.absolute.dir}</echo>
+            </then>
+            <else>
+                <run-tests-helper />
+                 <mkdir dir="intg-test-results"/>
+                 <exec executable="${adb}" failonerror="true" dir="intg-test-results">
+                     <arg line="${adb.device.arg}" />
+                     <arg value="pull" />
+                     <arg value="/data/data/${tested.project.app.package}/files/" />
+                 </exec>
+            </else>
+        </if>
+    </target>
+    
+        <target name="install"
+            description="Installs the newly build package. Must be used in conjunction with a build target
+                            (debug/release/instrument). If the application was previously installed, the application
+                            is reinstalled if the signature matches." >
+        <!-- only do install if *not* a library project -->
+        <do-only-if-not-library elseText="Library project: nothing to install!" >
+            <if>
+                <condition>
+                    <isset property="out.final.file" />
+                </condition>
+                <then>
+                    <if>
+                        <condition>
+                            <resourceexists>
+                                <file file="${out.final.file}"/>
+                            </resourceexists>
+                        </condition>
+                        <then>
+                            <echo level="info">Installing ${out.final.file} onto /system/app...</echo>
+<!--                            <exec executable="${adb}" failonerror="true"> -->
+<!--                                 <arg line="${adb.device.arg}" /> -->
+<!--                                 <arg value="root" /> -->
+<!--                             </exec> -->
+                            <exec executable="${adb}" failonerror="true">
+                                <arg line="${adb.device.arg}" />
+                                <arg value="shell" />
+                                <arg value="mount" />
+                                <arg value="-o"/>
+                                <arg value="rw,remount"/>
+                                <arg value="/dev/block/stl9"/>
+                                <arg value="/system"/>
+                            </exec>
+                            <exec executable="adb" failonerror="true">
+                                <arg value="shell" />
+                                <arg value="rm" />
+                                <arg value="/system/app/${ant.project.name}-debug.apk"/>
+                            </exec>
+                            <exec executable="adb" failonerror="true">
+                                <arg value="shell" />
+                                <arg value="rm" />
+                                <arg value="/system/app/${ant.project.name}-release.apk"/>
+                            </exec>
+                            <exec executable="adb" failonerror="true">
+                                <arg value="shell" />
+                                <arg value="rm" />
+                                <arg value="/system/app/${ant.project.name}-instrumented.apk"/>
+                            </exec>
+                            <exec executable="${adb}" failonerror="true">
+                                <arg line="${adb.device.arg}" />
+                                <arg value="push" />
+                                <arg value="${out.final.file}" />
+                                <arg value="/system/app/"/>
+                            </exec>
+
+                            <!-- now install the tested project if applicable -->
+                            <!-- can't use project.is.test since the setup target might not have run -->
+                            <if>
+                                <condition>
+                                    <and>
+                                        <isset property="tested.project.dir" />
+                                        <not>
+                                            <isset property="dont.do.deps" />
+                                        </not>
+                                    </and>
+                                </condition>
+                                <then>
+                                    <property name="tested.project.absolute.dir" location="${tested.project.dir}" />
+
+                                    <!-- figure out which tested package to install based on emma.enabled -->
+                                    <condition property="tested.project.install.target" value="installi" else="installd">
+                                        <isset property="emma.enabled" />
+                                    </condition>
+                                    <subant target="${tested.project.install.target}" failonerror="true">
+                                        <fileset dir="${tested.project.absolute.dir}" includes="build.xml" />
+                                    </subant>
+                                </then>
+                            </if>
+                        </then>
+                        <else>
+                            <fail message="File ${out.final.file} does not exist." />
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <echo>Install file not specified.</echo>
+                    <echo></echo>
+                    <echo>'ant install' now requires the build target to be specified as well.</echo>
+                    <echo></echo>
+                    <echo></echo>
+                    <echo>    ant debug install</echo>
+                    <echo>    ant release install</echo>
+                    <echo>    ant instrument install</echo>
+                    <echo>This will build the given package and install it.</echo>
+                    <echo></echo>
+                    <echo>Alternatively, you can use</echo>
+                    <echo>    ant installd</echo>
+                    <echo>    ant installr</echo>
+                    <echo>    ant installi</echo>
+                    <echo>    ant installt</echo>
+                    <echo>to only install an existing package (this will not rebuild the package.)</echo>
+                    <fail />
+                </else>
+            </if>
+        </do-only-if-not-library>
+    </target>
+        
+    <target name="getscreenshots">
+		<loadproperties srcFile="intg-test-results/screenshotspath.properties"/>
+		<property file="screenshotspath.properties" />
+		<echo level="info">Getting device Screenshots from path ${device.external.storage.screenshot}</echo>
+        <mkdir dir="intg-test-results/screenshots"/>
+        <exec executable="${adb}" failonerror="true" dir="intg-test-results/screenshots">
+              <arg line="${adb.device.arg}" />
+              <arg value="pull" />
+              <arg value="${device.external.storage.screenshot}" />
+        </exec>
+        <echo level="info">Removing device Screenshots from path ${device.external.storage.screenshot}</echo>
+        <exec executable="adb">
+        	<arg value="shell"/>
+        	<arg value="rm"/>
+        	<arg value="-r"/>
+        	<arg value="${device.external.storage.screenshot}"/>
+    </exec>
+    </target>  
+   
+    <target name="get-results" depends="-test-project-check">
+        <if condition="${project.is.test}">
+        <then>
+            <property name="tested.project.absolute.dir" location="${tested.project.dir}" />
+            <!-- Application package of the tested project extracted from its manifest file -->
+            <xpath input="${tested.project.absolute.dir}/AndroidManifest.xml"
+                    expression="/manifest/@package" output="tested.project.app.package" />
+        </then>
+        <else>
+            <!-- this is a test app, the tested package is the app's own package -->
+            <property name="tested.project.app.package" value="${project.app.package}" />
+        </else>
+        </if>
+        <mkdir dir="intg-test-results"/>
+        <exec executable="${adb}" failonerror="true" dir="intg-test-results">
+              <arg line="${adb.device.arg}" />
+              <arg value="pull" />
+              <arg value="/data/data/${tested.project.app.package}/files/" />
+        </exec>
+    </target> 
+
+</project>

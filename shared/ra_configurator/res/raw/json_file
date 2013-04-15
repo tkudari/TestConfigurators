@@ -1,0 +1,243 @@
+{
+  "dashwall_11": {
+    "featureId": "dashwall_11",
+    "featureName": "Wallpaper",
+    "featureData": [
+      {
+        "uri": "android.resource:\/\/com.android.launcher\/drawable\/wallpaper_02",
+        "src": "\/wallpapers\/wallpaper_02.jpg"
+      }
+    ]
+  },
+  "dashwall_12": {
+    "featureId": "dashwall_12",
+    "featureName": "Wallpaper",
+    "featureData": [
+      {
+        "uri": "android.resource:\/\/com.android.launcher\/drawable\/wallpaper_04",
+        "src": "\/wallpapers\/wallpaper_08.jpg"
+      }
+    ]
+  },
+  "dashwall_13": {
+    "featureId": "dashwall_13",
+    "featureName": "Wallpaper",
+    "featureData": [
+      {
+        "uri": "android.resource:\/\/com.android.launcher\/drawable\/wallpaper_08",
+        "src": "\/wallpapers\/wallpaper_08.jpg"
+      }
+    ]
+  },
+  "dashwall_14": {
+    "featureId": "dashwall_14",
+    "featureName": "Wallpaper",
+    "featureData": [
+      {
+        "uri": "android.resource:\/\/com.android.launcher\/drawable\/wallpaper_12",
+        "src": "\/wallpapers\/wallpaper_12.jpg"
+      }
+    ]
+  },
+  "dashwall_21": {
+    "featureId": "dashwall_21",
+    "featureName": "Ringtone",
+    "featureData": [
+      {
+        "type": "call",
+        "uri": "file:\/\/\/system\/media\/audio\/ringtones\/ArgoNavis.ogg",
+        "title": "Argo Navis",
+        "src": "\/ringtones\/ArgoNavis.ogg"
+      }
+    ]
+  },
+  "dashwall_22": {
+    "featureId": "dashwall_22",
+    "featureName": "Ringtone",
+    "featureData": [
+      {
+        "type": "call",
+        "uri": "file:\/\/\/system\/media\/audio\/ringtones\/Carina.ogg",
+        "title": "Carina",
+        "src": "\/ringtones\/Carina.ogg"
+      }
+    ]
+  },
+  "dashwall_23": {
+    "featureId": "dashwall_23",
+    "featureName": "Ringtone",
+    "featureData": [
+      {
+        "type": "call",
+        "uri": "file:\/\/\/system\/media\/audio\/ringtones\/Cygnus.ogg",
+        "title": "Cygnus",
+        "src": "\/ringtones\/Cygnus.ogg"
+      }
+    ]
+  },
+  "dashwall_24": {
+    "featureId": "dashwall_24",
+    "featureName": "Ringtone",
+    "featureData": [
+      {
+        "type": "call",
+        "uri": "file:\/\/\/system\/media\/audio\/ringtones\/Pyxis.ogg",
+        "title": "Pyxis",
+        "src": "\/ringtones\/Pyxis.ogg"
+      }
+    ]
+  },
+  "dashwall_31": {
+    "featureId": "dashwall_31",
+    "featureName": "Ringtone",
+    "featureData": [
+      {
+        "type": "sms",
+        "uri": "file:\/\/\/system\/media\/audio\/notifications\/Capella.ogg",
+        "title": "Capella",
+        "src": "\/notifications\/Capella.ogg"
+      }
+    ]
+  },
+  "dashwall_32": {
+    "featureId": "dashwall_32",
+    "featureName": "Ringtone",
+    "featureData": [
+      {
+        "type": "sms",
+        "uri": "file:\/\/\/system\/media\/audio\/notifications\/Mira.ogg",
+        "title": "Mira",
+        "src": "\/notifications\/Mira.ogg"
+      }
+    ]
+  },
+  "dashwall_33": {
+    "featureId": "dashwall_33",
+    "featureName": "Ringtone",
+    "featureData": [
+      {
+        "type": "sms",
+        "uri": "file:\/\/\/system\/media\/audio\/notifications\/Procyon.ogg",
+        "title": "Procyon",
+        "src": "\/notifications\/Procyon.ogg"
+      }
+    ]
+  },
+  "dashwall_34": {
+    "featureId": "dashwall_34",
+    "featureName": "Ringtone",
+    "featureData": [
+      {
+        "type": "sms",
+        "uri": "file:\/\/\/system\/media\/audio\/notifications\/Vega.ogg",
+        "title": "Vega",
+        "src": "\/notifications\/Vega.ogg"
+      }
+    ]
+  },
+  "dashwall_41": {
+    "featureId": "dashwall_41",
+    "featureName": "Shortcut",
+    "featureData": [
+      {
+        "id": "com.google.android.apps.maps\/com.google.android.maps.MapsActivity",
+        "title": "Maps",
+        "category": "Shortcuts",
+        "src": "\/shortcuts\/com.google.android.maps.MapsActivity.png",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "rows": 1,
+        "cols": 1
+      }
+    ]
+  },
+  "dashwall_42": {
+    "featureId": "dashwall_42",
+    "featureName": "Shortcut",
+    "featureData": [
+      {
+        "id": "com.google.android.gm\/com.google.android.gm.ConversationListActivityGmail",
+        "title": "Gmail",
+        "category": "Shortcuts",
+        "src": "\/shortcuts\/com.google.android.gm.ConversationListActivityGmail.png",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "rows": 1,
+        "cols": 1
+      }
+    ]
+  },
+  "dashwall_43": {
+    "featureId": "dashwall_43",
+    "featureName": "Shortcut",
+    "featureData": [
+      {
+        "id": "com.google.android.youtube\/com.google.android.youtube.app.honeycomb.Shell$HomeActivity",
+        "title": "YouTube",
+        "category": "Shortcuts",
+        "src": "\/shortcuts\/com.google.android.youtube.app.honeycomb.Shell$HomeActivity.png",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "rows": 1,
+        "cols": 1
+      }
+    ]
+  },
+  "dashwall_51": {
+    "featureId": "dashwall_51",
+    "featureName": "Widget",
+    "featureData": [
+      {
+        "src": "\/widgets\/com_google_android_deskclock_com_android_alarmclock_AnalogAppWidgetProvider.png",
+        "title": "Analog clock",
+        "id": "com.google.android.deskclock\/com.android.alarmclock.AnalogAppWidgetProvider",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "category": "Widget",
+        "rows": 2,
+        "cols": 2,
+        "container_id": 1
+      }
+    ]
+  },
+  "dashwall_52": {
+    "featureId": "dashwall_52",
+    "featureName": "Widget",
+    "featureData": [
+      {
+        "src": "\/widgets\/com_google_android_googlequicksearchbox_com_google_android_googlequicksearchbox_SearchWidgetProvider.png",
+        "title": "Google Search",
+        "id": "com.google.android.googlequicksearchbox\/com.google.android.googlequicksearchbox.SearchWidgetProvider",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "category": "Widget",
+        "rows": 4,
+        "cols": 1,
+        "container_id": 1
+      }
+    ]
+  },
+  "dashwall_53": {
+    "featureId": "dashwall_53",
+    "featureName": "Widget",
+    "featureData": [
+      {
+        "id": "com.google.android.apps.genie.geniewidget\/com.google.android.apps.genie.geniewidget.miniwidget.MiniWidgetProvider",
+        "title": "News & Weather",
+        "src": "\/widgets\/com_google_android_apps_genie_geniewidget_com_google_android_apps_genie_geniewidget_miniwidget_MiniWidgetProvider.png",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "category": "Widget",
+        "rows": 4,
+        "cols": 1,
+        "container_id": 1
+      }
+    ]
+  }
+}

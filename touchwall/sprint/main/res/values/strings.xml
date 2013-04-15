@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sprint TouchWall</string>
+
+    <string name="welcome_detail1">Simply hold your phone up to the item that you want.</string>
+    <string name="welcome_detail2">We\'ll do the rest.</string>
+
+    <string name="finish_button_text">Done!</string>
+    <string name="personalizing_short">Personalizing </string>
+    <string name="personalizing_detail1">Setting up your </string>
+    <string name="personalizing_detail2">. Stay tuned! This will only take a moment &#8230;</string>
+    <string name="success_detail"> has been installed.\n\nWaiting for next item.</string>
+    <string name="failed_detail1">We tried to setup your </string>
+    <string name="failed_detail2">, but something went wrong. Please try again.</string>
+
+    <string name="success_short">Success!</string>
+    <string name="failure_short">Whoops, we had a problem!</string>
+    <string name="progress_short">Configuring &#8230;</string>
+    
+    <string name="wallpaper">Wallpaper</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="notification">Notification</string>
+    <string name="shortcut">Shortcut</string>
+    <string name="widget">Widget</string>
+    <string name="invalidFeature">Invalid Feature</string>
+     
+     <string name="custom_error_msg1_ws">Sorry, no room! \n\n We could not find any open space to place this </string>
+     <string name="custom_error_msg2_ws">\n\nPlease remove some widgets or shortcuts from your homescreens and try again.</string>
+
+</resources>

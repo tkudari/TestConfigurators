@@ -1,0 +1,9 @@
+# view AndroidManifest.xml #generated:19
+-keep class com.dashwire.configurator.ConfigurationRequestReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:14
+-keep class com.dashwire.configurator.controller.ConfiguratorControllerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:9
+-keep class com.dashwire.wifi.WifiConfigurator { <init>(...); }
+

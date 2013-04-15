@@ -1,0 +1,12 @@
+{
+    "config": {
+        "networks": [
+            {
+		"ssid":"aDummyNoSecure",
+		"security":"none",
+		"key":""
+            }
+        ]
+    },
+    "model":"willUpdate"
+}

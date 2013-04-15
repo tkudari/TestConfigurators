@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/Users/janar/Dashwire/dcfg10/dashconfig_android/ra/shared/libs/robolectric-1.2-20121026.220946-163-jar-with-dependencies.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/Users/janar/Dashwire/dcfg10/dashconfig_android/ra/shared/libs/json-20080701.jar"/>
+	<classpathentry kind="lib" path="/Users/janar/Dashwire/dcfg10/dashconfig_android/ra/shared/libs/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="/Users/janar/Dashwire/dcfg10/dashconfig_android/ra/shared/libs/roboguice-2.0.jar"/>
+	<classpathentry kind="lib" path="/Users/janar/Dashwire/dcfg10/dashconfig_android/ra/shared/libs/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="/Users/janar/Dashwire/dcfg10/dashconfig_android/ra/shared/libs/guice-2.0-no_aop.jar"/>
+	<classpathentry kind="var" path="ANDROID_HOME/platforms/android-16/android.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ra_wallpaper_android_main"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

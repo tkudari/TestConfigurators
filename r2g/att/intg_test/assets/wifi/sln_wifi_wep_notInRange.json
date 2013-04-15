@@ -1,0 +1,12 @@
+{
+    "config": {
+        "networks": [
+            {
+                "ssid": "DummyWepWifi",
+                "security": "wep",
+                "key": "F2C7BB35B9"
+            }
+        ]
+    },
+    "model":"willUpdate"
+}

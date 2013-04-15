@@ -1,0 +1,44 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dashwire.testing.helper"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ui.TestingNFCIntentActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.dashwire.testing.NFC"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".controller.TestingHelperService"
+            android:enabled="true" >
+            	<intent-filter>
+                	<action android:name="com.dashwire.testing.helper.SERVICE" >
+                	</action>
+            	</intent-filter>
+        </service>
+        <receiver android:name=".screenshot.ScreenShotResultReceiver">
+            <intent-filter>
+                <action android:name="com.dashwire.screenshot.success"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".mock.AssetGathererResultReceiver">
+            <intent-filter>
+                <action android:name="com.dashwire.asset.gatherer.intent.action.EXTRACTION_RESULT"/>
+            </intent-filter>
+        </receiver> 
+    </application>
+
+</manifest>

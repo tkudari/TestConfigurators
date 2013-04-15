@@ -1,0 +1,66 @@
+{
+	"default":{
+	
+	},
+	"networks": [
+            {
+                "ssid": "Dashwire QA",
+                "security": "wep",
+                "key": "F2C7BB35B9"
+            },            
+            {
+                "ssid": "Dashwire Mobile WPA2",
+                "security": "wpa2-psk",
+                "key": "are we agile yet?"
+            },            
+            {
+                "ssid": "aDummy_None_Secure Wifi",
+                "security": "none",
+                "key": "secret"
+            },
+            {
+                "ssid": "aDummy WEP",
+                "security": "wep",
+                "key": "123456789ab"
+            },
+            {
+                "ssid": "aDummy WPA2",
+                "security": "wpa2-psk",
+                "key": "supersecretp123"
+            }          
+        ],
+       "networks_positive": [
+            {
+                "ssid": "Dashwire Private",
+                "security": "wpa2-psk",
+                "key": "are we agile yet?"
+            },
+            {
+                "ssid": "Dashwire QA",
+                "security": "wep",
+                "key": "F2C7BB35B9"
+            },            
+            {
+                "ssid": "Dashwire Mobile WPA2",
+                "security": "wpa2-psk",
+                "key": "d@shm0b1l3"
+            },            
+            {
+                "ssid": "aDummy_None_Secure Wifi",
+                "security": "none",
+                "key": "secret"
+            },
+            {
+                "ssid": "aDummy WPA2",
+                "security": "wpa2-psk",
+                "key": "supersecretpswd"
+            }          
+        ],
+       "networks_negative": [
+            {
+                "ssid": "aDummy WEP",
+                "security": "wep",
+                "key": "123456789ab"
+            }         
+        ]  
+}

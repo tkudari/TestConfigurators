@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    tools:context=".NFCConfigureActivity" >
+    
+    <TextView
+        android:id="@+id/title"
+        style="@style/app_title"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="left|center_vertical"
+        android:text="@string/app_name" />
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="false"
+	    android:layout_centerVertical="true"
+	    android:gravity="center"
+	    android:paddingBottom="50dp" >
+		    
+			<TextView
+			    android:id="@+id/short_message"
+			    style="@style/title"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="16dp"
+			    android:paddingBottom="16dp"
+			    android:layout_marginBottom="10dp"
+			    android:layout_marginLeft="20dp"
+			    android:layout_marginRight="20dp"
+			    android:gravity="center"
+			    android:text="Test Message"
+			    />
+		
+			<TextView
+			    android:id="@+id/detailed_explanation"
+			    style="@style/explanation"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/short_message"
+			    android:paddingRight="20dp"
+			    android:paddingLeft="20dp"
+			    android:paddingTop="20dp"
+			    android:paddingBottom="20dp"
+			    android:layout_marginLeft="20dp"
+			    android:layout_marginRight="20dp"
+			    android:gravity="center"
+			    android:text="Test Message"
+			    android:textAlignment="gravity" />
+			
+	    </RelativeLayout>
+			    
+	    <Button
+	        android:id="@+id/finish_button"
+	        style="@style/main_button"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginBottom="20dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:gravity="center"
+	        android:text="@string/finish_button_text"
+	        />
+        
+</RelativeLayout>

@@ -1,0 +1,93 @@
+{
+    "networks_positive": [
+            {
+                "ssid": "Dashwire Private",
+                "security": "wpa2-psk",
+                "key": "are we agile yet?"
+            },
+            {
+                "ssid": "Dashwire QA",
+                "security": "wep",
+                "key": "F2C7BB35B9"
+            },            
+            {
+                "ssid": "Dashwire Mobile WPA2",
+                "security": "wpa2-psk",
+                "key": "d@shm0b1l3"
+            },            
+            {
+                "ssid": "aDummy_None_Secure Wifi",
+                "security": "none",
+                "key": "secret"
+            },
+            {
+                "ssid": "aDummy WPA2",
+                "security": "wpa2-psk",
+                "key": "supersecretpswd"
+            }          
+        ],
+       "networks_negative": [
+            {
+                "ssid": "aDummy WEP",
+                "security": "wep",
+                "key": "123456789ab"
+            }         
+        ],
+         "one_positive_gmail": [
+            {
+                "login": "dwqa01@gmail.com",
+                "password": "crushit!",
+                "service": "Gmail",
+                "sync_email": true,
+                "sync_contacts": true,
+                "sync_calendar": true
+            }
+        ],
+         "one_negative_gmail": [
+            {
+                "login": "dwqa02@gmail.com",
+                "password": "test",
+                "service": "Gmail",
+                "sync_email": true,
+                "sync_contacts": true,
+                "sync_calendar": true
+            }
+        ],        
+        "emails": [
+            {
+                "login": "dwqa01@gmail.com",
+                "password": "crushit!",
+                "service": "Gmail",
+                "sync_email": true,
+                "sync_contacts": true,
+                "sync_calendar": true
+            },
+            {
+                "login": "dwqa02@gmail.com",
+                "password": "crushit!",
+                "service": "Gmail",
+                "sync_email": true,
+                "sync_contacts": true,
+                "sync_calendar": true
+            },
+            {
+                "login": "dwqa01@hotmail.com",
+                "password": "crushit!",
+                "service": "Hotmail",
+                "sync_email": true
+            },
+            {
+                "login": "dwqa01@yahoo.com",
+                "password": "crushit!",
+                "service": "Yahoo",
+                "sync_email": true,
+                "display_name": "MyMainYahoo"
+            },
+            {
+                "login": "dwqa01@aol.com",
+                "password": "crushit!",
+                "service": "Aol",
+                "sync_email": true
+            }
+        ]
+}

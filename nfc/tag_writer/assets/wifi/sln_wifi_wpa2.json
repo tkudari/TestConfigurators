@@ -1,0 +1,12 @@
+{
+    "config": {
+        "networks": [
+            {
+                "ssid": "Dashwire Private",
+                "security": "wpa2-psk",
+                "key": "are we agile yet?"
+            }
+        ]
+    },
+    "model":"willUpdate"
+}

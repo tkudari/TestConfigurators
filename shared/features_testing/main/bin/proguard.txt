@@ -1,0 +1,21 @@
+# view AndroidManifest.xml #generated:21
+-keep class com.dashwire.features.testing.FeatureConfigurationResultReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.dashwire.features.testing.FeatureTestingRequestReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:9
+-keep class com.dashwire.features.testing.controller.FeaturesTestingControllerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.dashwire.testing.helper.controller.TestingHelperService { <init>(...); }
+
+# view AndroidManifest.xml #generated:43
+-keep class com.dashwire.testing.helper.mock.AssetGathererResultReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.dashwire.testing.helper.screenshot.ScreenShotResultReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:26
+-keep class com.dashwire.testing.helper.ui.TestingNFCIntentActivity { <init>(...); }
+

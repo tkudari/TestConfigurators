@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ra_nfc_main_custom" xmlns:ac="ant-contrib">
+    
+    <taskdef resource="net/sf/antcontrib/antlib.xml"
+	    uri="ant-contrib">
+     <classpath>
+         <fileset dir="${env.WORKSPACE}/build/ant.lib/ant-contrib"/>
+     </classpath>
+	</taskdef>
+	
+	<target name="add-product-components">
+		<echo>product = ${product}</echo>
+		<echo>product.dir = ${product.dir}</echo>
+		<echo>product.build.file = ${product.build.file}</echo>
+		<echo>components.list = ${components.list}</echo>
+		<property name="index" value="0" />
+		<ac:for list="${components.list}" param="component" parallel="false">
+			<sequential>
+				<echo>Including @{component}</echo>
+
+				<exec executable="${env.ANDROID_HOME}/tools/android"
+					failonerror="true" dir="${env.WORKSPACE}/ra/${@{component}.path}/main">
+					<arg line="update" />
+					<arg value="project" />
+					<arg value="-p" />
+					<arg value="." />
+					<arg value="-t" />
+					<arg value="${target-android}" />
+				</exec>
+				
+				<propertyfile
+					file="${env.WORKSPACE}/ra/${@{component}.path}/main/project.properties">
+					<entry key="android.library" value="true" />
+				</propertyfile>
+				<increase.index value="${index}" property="index" />
+				<echo>index = ${index}</echo>
+				<echo>path = ../../../../../ra/${@{component}.path}/main</echo>
+				<propertyfile file="${env.WORKSPACE}/${product.dir}/project.properties">
+					<entry key="android.library.reference.${index}" value="../../../ra/${@{component}.path}/main" />
+				</propertyfile>
+			</sequential>
+		</ac:for>
+	</target>
+	
+	<target name="add-product-components-and-testing-helper">
+		<echo>Adding testing_helper library project to product</echo>
+		<propertyfile file="${env.WORKSPACE}/${product.dir}/project.properties">
+			<entry key="android.library.reference.1" value="../../shared/testing_helper" />
+		</propertyfile>
+			
+		<property name="index" value="1" />
+		<ac:for list="${components.list}" param="component" parallel="false">
+			<sequential>
+				<echo>Including @{component}</echo>
+
+				<exec executable="${env.ANDROID_HOME}/tools/android"
+					failonerror="true" dir="${env.WORKSPACE}/ra/${@{component}.path}/main">
+					<arg line="update" />
+					<arg value="project" />
+					<arg value="-p" />
+					<arg value="." />
+				</exec>
+				
+				<propertyfile
+					file="${env.WORKSPACE}/ra/${@{component}.path}/main/project.properties">
+					<entry key="android.library" value="true" />
+				</propertyfile>
+				<increase.index value="${index}" property="index" />
+				<echo>index = ${index}</echo>
+				<echo>path = ../../${@{component}.path}</echo>
+				<propertyfile file="${env.WORKSPACE}/${product.dir}/project.properties">
+					<entry key="android.library.reference.${index}" value="../../${@{component}.path}/main" />
+				</propertyfile>
+			</sequential>
+		</ac:for>
+	</target>
+	
+	<target name="reset-product-components">
+		<ac:for list="${components.list}" param="component" parallel="false">
+			<sequential>
+				<echo>Removing as library project @{component}</echo>
+				
+				<propertyfile
+					file="${env.WORKSPACE}/ra/${@{component}.path}/main/project.properties">
+					<entry key="android.library" value="true" />
+				</propertyfile>
+				
+			</sequential>
+		</ac:for>
+	</target>
+    
+</project>

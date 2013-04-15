@@ -1,0 +1,14 @@
+{
+	    "ringtones": [
+            {
+                "uri": "file:///system/media/audio/ringtones/ATT_Firefly.ogg",
+                "type": "call",
+                "title": "AT&T Firefly"
+            },
+            {
+                "uri": "file:///system/media/audio/notifications/09_Echo.ogg",
+                "type": "sms",
+                "title": "Echo"
+            }
+        ]
+}

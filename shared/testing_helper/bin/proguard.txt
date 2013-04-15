@@ -1,0 +1,12 @@
+# view AndroidManifest.xml #generated:24
+-keep class com.dashwire.testing.helper.controller.TestingHelperService { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.dashwire.testing.helper.mock.AssetGathererResultReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.dashwire.testing.helper.screenshot.ScreenShotResultReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.dashwire.testing.helper.ui.TestingNFCIntentActivity { <init>(...); }
+

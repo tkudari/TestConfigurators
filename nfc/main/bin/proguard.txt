@@ -1,0 +1,21 @@
+# view AndroidManifest.xml #generated:64
+-keep class com.dashwire.nfc.ConfigurationResultReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.dashwire.nfc.controller.NFCControllerService { <init>(...); }
+
+# view AndroidManifest.xml #generated:46
+-keep class com.dashwire.nfc.ui.ConfigurationStatusActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class com.dashwire.nfc.ui.NFCTriggerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class com.dashwire.nfc.ui.SplashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:52
+-keep class com.dashwire.nfc.ui.ThankYouActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:30
+-keep class com.dashwire.nfc.ui.WelcomeActivity { <init>(...); }
+

@@ -1,0 +1,11 @@
+{
+		"featureName": "Ringtone",
+	    "featureData": [
+            {
+            	"type": "call",
+            	"uri": "file:\/\/\/system\/media\/audio\/ringtones\/Aero.mp3",
+            	"title": "Aero",
+            	"src": "\/ringtones\/Aero.mp3"
+        	}
+        ]
+}

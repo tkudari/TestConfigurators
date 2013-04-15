@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    tools:context=".NFCConfigureActivity" >
+    
+    
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerInParent="false"
+	    android:layout_centerVertical="true"
+	    android:gravity="center"
+	    android:paddingBottom="50dp" >
+		    
+			<TextView
+			    android:id="@+id/TyText1"
+			    style="@style/title"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="16dp"
+			    android:paddingBottom="16dp"
+			    android:layout_marginBottom="10dp"
+			    android:layout_marginLeft="20dp"
+			    android:layout_marginRight="20dp"
+			    android:gravity="center"
+			    android:text="@string/tytext1"
+			    />
+		
+			<TextView
+			    android:id="@+id/TyText2"
+			    style="@style/explanation"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/TyText1"
+			    android:paddingRight="20dp"
+			    android:paddingLeft="20dp"
+			    android:paddingTop="20dp"
+			    android:paddingBottom="20dp"
+			    android:layout_marginLeft="20dp"
+			    android:layout_marginRight="20dp"
+			    android:gravity="center"
+			    android:text="@string/tytext2"
+			    android:textAlignment="gravity"/>
+			
+			<TextView
+			    android:id="@+id/TyText3"
+			    style="@style/explanation_small"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/TyText2"
+			    android:paddingRight="20dp"
+			    android:paddingLeft="20dp"			    
+			    android:paddingBottom="20dp"
+			    android:layout_marginLeft="20dp"
+			    android:layout_marginRight="20dp"
+			    android:gravity="center"
+			    android:text="@string/tytext3"
+			    android:textAlignment="gravity"/> 
+			     
+			
+	    </RelativeLayout>			    
+	  
+        
+</RelativeLayout>

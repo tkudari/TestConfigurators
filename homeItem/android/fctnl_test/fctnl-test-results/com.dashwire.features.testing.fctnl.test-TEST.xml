@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites>
+  <testsuite errors="0" failures="0" name="com.dashwire.features.testing.fctnl.test.TestingOneWidgetTest" package="com.dashwire.features.testing.fctnl.test" tests="2" time="78.206" timestamp="2013-02-27T19:47:52">
+    <testcase classname="com.dashwire.features.testing.fctnl.test.TestingOneWidgetTest" name="testAndroidTestCaseSetupProperly" time="2.01" />
+    <testcase classname="com.dashwire.features.testing.fctnl.test.TestingOneWidgetTest" name="testOneWidget" time="76.196" />
+    <properties />
+    <system-out />
+    <system-err />
+  </testsuite>
+</testsuites>

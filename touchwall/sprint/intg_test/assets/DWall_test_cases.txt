@@ -1,0 +1,105 @@
+##############################################
+#
+# UI expected text
+#
+# NO DOUBLE QUOTES "" NEEDED ON PARAMETERS VALUES
+#
+##############################################
+
+
+welcomeTitle=Simply hold your phone up to the item that you want.
+thankYouTitle=Thank You!
+thankYouText=Come back again when you wish to make additional changes.
+
+successConfigWP=Wallpaper has been installed.
+successConfigRT=Ringtone has been installed.
+successConfigNF=Notification has been installed.
+successConfigSC=Shortcut has been installed.
+successConfigWG=Widget has been installed.
+successMessage=Success!
+
+incorrectIDMessage=Whoops, we had a problem!
+
+noMoreRoomWG=Please remove some widgets or shortcuts and try again.
+noMoreRoomSC=Please remove some widgets or shortcuts and try again.
+
+buttonDone=Done!
+
+
+
+
+
+
+##############################################
+#
+# Test cases:  Asset ID and Feature separated by "," (comma) I.e. OneRingtoneTest=dashwall_1,Ringtone
+#			   Multiple test cases (AssetID and Feature) separated by ";" (semicolon). I.e:
+#																   RT_testCases=dashwall_2,Ringtone;dashwall_3,Ringtone
+#
+## NO DOUBLE QUOTES "" NEEDED ON PARAMETERS VALUES
+##############################################
+
+
+#Wallpaper one asset. Test case will set one Wallpaper.
+oneWallpaper=dashwall_11,Wallpaper
+oneWallpaper2=dashwall_13,Wallpaper
+			 
+#Wallpaper multiple wallpaper test case
+multipleWallpapers=dashwall_11,Wallpaper;dashwall_12,Wallpaper;dashwall_13,Wallpaper;dashwall_14,Wallpaper
+
+#Wallpaper. Wallpaper ID does not exist.
+inexistentWP=dashwall_1818,Wallpaper
+
+
+
+
+#Ringtone one asset. Test case will set one Ringtone.
+oneRingtone=dashwall_22,Ringtone
+
+#Ringtone multiple Ringtones test case
+multipleRingtones=dashwall_21,Ringtone;dashwall_22,Ringtone;dashwall_23,Ringtone;dashwall_24,Ringtone
+
+#Ringtone. Ringtone does not exist.
+inexistentRT=dashwall_1818,Ringtone
+
+
+
+
+#Notifications one asset. Test case will set one Ringtone.
+oneNotification=dashwall_31,Notification
+
+#Notification multiple Ringtones test case
+multipleNotifications=dashwall_31,Ringtone;dashwall_32,Ringtone;dashwall_33,Ringtone;dashwall_34,Ringtone
+
+#Notification. Notification does not exist.
+inexistentNF=dashwall_1818,Notification
+
+
+
+
+#Shortcut. Config one shortcut
+oneShortcut=dashwall_41,Shortcut
+
+#Shorcuts. Config multiple Shortcuts
+multipleShortcuts=dashwall_41,Shortcut;dashwall_42,Shortcut;dashwall_43,Shortcut
+
+#Shorcuts. Shortcut does not exist.
+inexistentSC=dashwall_1818,Shortcut
+
+#Shorcuts. Feature description doesn't exist.
+inexistentFeature=dashwall_41,/O8<INSERT_MALEFICENT_DATA_HERE>8O/
+
+
+
+
+#Widget. Config one widget.
+oneWidget=dashwall_51,Widget
+
+#Widget. Config multiple widgets
+multipleWidgets=dashwall_51,Widget;dashwall_52,Widget;dashwall_53,Widget
+
+#Widget. Widget does not exist.
+inexistentWG=dashwall_1818,Widget
+
+
+			 

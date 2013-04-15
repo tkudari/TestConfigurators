@@ -1,0 +1,13 @@
+{
+    "config": {
+        "wallpapers": [
+            {
+                "uri": "android.resource://com.lge.launcher2/drawable/wallpaper_04",
+                "page": 0,
+                "src": "/branded/lg/74568098/devices/daejang/wallpaper/wallpaper_04.jpg"
+            }
+        ],
+        "model": "l1a",
+        "paired": true
+    }
+}

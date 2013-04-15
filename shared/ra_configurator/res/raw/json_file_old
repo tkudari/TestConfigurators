@@ -1,0 +1,190 @@
+{
+  "dashwall_1": {
+    "featureId": "dashwall_1",
+    "featureName": "Ringtone",
+    "featureData": [
+      {
+        "type": "call",
+        "uri": "file:\/\/\/system\/media\/audio\/ringtones\/Carina.ogg",
+        "title": "Carina",
+        "src": "\/ringtones\/Carina.ogg"
+      }
+    ]
+  },
+  "dashwall_2": {
+    "featureId": "dashwall_2",
+    "featureName": "Ringtone",
+    "featureData": [
+      {
+        "type": "call",
+        "uri": "file:\/\/\/system\/media\/audio\/ringtones\/Cygnus.ogg",
+        "title": "Cygnus",
+        "src": "\/ringtones\/Cygnus.ogg"
+      }
+    ]
+  },
+  "dashwall_3": {
+    "featureId": "dashwall_3",
+    "featureName": "Ringtone",
+    "featureData": [
+      {
+        "type": "call",
+        "uri": "file:\/\/\/system\/media\/audio\/ringtones\/Machina.ogg",
+        "title": "Machina",
+        "src": "\/ringtones\/Machina.ogg"
+      }
+    ]
+  },
+  "dashwall_4": {
+    "featureId": "dashwall_4",
+    "featureName": "Wallpaper",
+    "featureData": [
+      {
+        "uri": "android.resource:\/\/com.android.launcher\/drawable\/wallpaper_03",
+        "src": "\/wallpapers\/wallpaper_03.jpg"
+      }
+    ]
+  },
+  "dashwall_5": {
+    "featureId": "dashwall_5",
+    "featureName": "Wallpaper",
+    "featureData": [
+      {
+        "uri": "android.resource:\/\/com.android.launcher\/drawable\/wallpaper_08",
+        "src": "\/wallpapers\/wallpaper_08.jpg"
+      }
+    ]
+  },
+  "dashwall_6": {
+    "featureId": "dashwall_6",
+    "featureName": "Wallpaper",
+    "featureData": [
+      {
+        "uri": "android.resource:\/\/com.android.launcher\/drawable\/wallpaper_05",
+        "src": "\/wallpapers\/wallpaper_05.jpg"
+      }
+    ]
+  },
+  "dashwall_7": {
+    "featureId": "dashwall_7",
+    "featureName": "Shortcut",
+    "featureData": [
+      {
+        "id": "com.google.android.apps.maps\/com.google.android.maps.MapsActivity",
+        "title": "Maps",
+        "category": "Shortcuts",
+        "src": "\/shortcuts\/com.google.android.maps.MapsActivity.png",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "rows": 1,
+        "cols": 1
+      }
+    ]
+  },
+  "dashwall_8": {
+    "featureId": "dashwall_8",
+    "featureName": "Shortcut",
+    "featureData": [
+      {
+        "id": "com.google.android.gm\/com.google.android.gm.ConversationListActivityGmail",
+        "title": "Gmail",
+        "category": "Shortcuts",
+        "src": "\/shortcuts\/com.google.android.gm.ConversationListActivityGmail.png",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "rows": 1,
+        "cols": 1
+      }
+    ]
+  },
+  "dashwall_9": {
+    "featureId": "dashwall_9",
+    "featureName": "Shortcut",
+    "featureData": [
+      {
+        "id": "com.android.vending\/com.android.vending.AssetBrowserActivity",
+        "title": "Play Store",
+        "category": "Shortcuts",
+        "src": "\/shortcuts\/com.android.vending.AssetBrowserActivity.png",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "rows": 1,
+        "cols": 1
+      }
+    ]
+  },
+  "dashwall_10": {
+    "featureId": "dashwall_10",
+    "featureName": "Shortcut",
+    "featureData": [
+      {
+        "id": "com.google.android.youtube\/com.google.android.youtube.app.honeycomb.Shell$HomeActivity",
+        "title": "YouTube",
+        "category": "Shortcuts",
+        "src": "\/shortcuts\/com.google.android.youtube.app.honeycomb.Shell$HomeActivity.png",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "rows": 1,
+        "cols": 1
+      }
+    ]
+  },
+  "dashwall_11": {
+    "featureId": "dashwall_11",
+    "featureName": "Widget",
+    "featureData": [
+      {
+        "src": "\/widgets\/com_google_android_deskclock_com_android_alarmclock_AnalogAppWidgetProvider.png",
+        "title": "Analog clock",
+        "id": "com.google.android.deskclock\/com.android.alarmclock.AnalogAppWidgetProvider",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "category": "widget",
+        "rows": 2,
+        "cols": 2,
+        "container_id": 1
+      }
+    ]
+  },
+  "dashwall_12": {
+    "featureId": "dashwall_12",
+    "featureName": "Widget",
+    "featureData": [
+      {
+        "id": "com.google.android.apps.genie.geniewidget\/com.google.android.apps.genie.geniewidget.miniwidget.MiniWidgetProvider",
+        "title": "News & Weather",
+        "src": "\/widgets\/com_google_android_apps_genie_geniewidget_com_google_android_apps_genie_geniewidget_miniwidget_MiniWidgetProvider.png",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "category": "Widgets",
+        "rows": 4,
+        "cols": 1,
+        "container_id": 1
+      }
+    ]
+  },
+  "dashwall_13": {
+    "featureId": "dashwall_13",
+    "featureName": "Widget",
+    "featureData": [
+      {
+        "src": "\/widgets\/com_google_android_googlequicksearchbox_com_google_android_googlequicksearchbox_SearchWidgetProvider.png",
+        "title": "Google Search",
+        "id": "com.google.android.googlequicksearchbox\/com.google.android.googlequicksearchbox.SearchWidgetProvider",
+        "screen": 0,
+        "x": 0,
+        "y": 0,
+        "category": "Widgets",
+        "rows": 4,
+        "cols": 1,
+        "container_id": 1
+      }
+    ]
+  }
+}

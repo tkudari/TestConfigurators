@@ -1,0 +1,6 @@
+# view AndroidManifest.xml #generated:13
+-keep class com.dashwire.configurator.ConfigurationRequestReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:8
+-keep class com.dashwire.wallpaper.WallpaperConfigurator { <init>(...); }
+

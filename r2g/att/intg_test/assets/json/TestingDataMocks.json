@@ -1,0 +1,171 @@
+{
+	"networks": [
+            {
+                "ssid": "Dashwire QA",
+                "security": "wep",
+                "key": "F2C7BB35B9"
+            },            
+            {
+                "ssid": "Dashwire Private",
+                "security": "wpa2-psk",
+                "key": "are we agile yet?"
+            },            
+            {
+                "ssid": "aDummy_None_Secure Wifi",
+                "security": "none",
+                "key": "secret"
+            },
+            {
+                "ssid": "aDummy WEP",
+                "security": "wep",
+                "key": "123456789ab"
+            },
+            {
+                "ssid": "aDummy WPA2",
+                "security": "wpa2-psk",
+                "key": "supersecretp123"
+            }          
+        ],
+        "networks_positive": [
+            {
+                "ssid": "Dashwire Private",
+                "security": "wpa2-psk",
+                "key": "are we agile yet?"
+            },
+            {
+                "ssid": "Dashwire QA",
+                "security": "wep",
+                "key": "F2C7BB35B9"
+            },            
+            {
+                "ssid": "Dashwire Mobile WPA2",
+                "security": "wpa2-psk",
+                "key": "d@shm0b1l3"
+            },            
+            {
+                "ssid": "aDummy_None_Secure Wifi",
+                "security": "none",
+                "key": "secret"
+            },
+            {
+                "ssid": "aDummy WPA2",
+                "security": "wpa2-psk",
+                "key": "supersecretpswd"
+            }          
+        ],
+       "networks_negative": [
+            {
+                "ssid": "aDummy WEP",
+                "security": "wep",
+                "key": "123456789ab"
+            }         
+        ],
+        "bookmarks": [
+            {
+                "name": "myCustomBookmark",
+                "url": "http: //www.custom.com",
+                "favicon": {
+                    "src": "https: //s3.amazonaws.com/media.dashconfig.com/images/bookmarks-default-favicon.png",
+                    "alt": "myCustomBookmark"
+                }
+            },
+            {
+                "name": "CNET",
+                "url": "http: //m.cnet.com",
+                "categories": [
+                    3
+                ],
+                "favicon": {
+                    "src": "https: //s3.amazonaws.com/media.dashconfig.com/images/bookmarks-default-favicon.png",
+                    "alt": "FavIcon"
+                }
+            }
+        ],
+        "contacts": [
+            {
+                "given": "aaFirstQAContact",
+                "family": "SameLastName",
+                "phones": [
+                    {
+                        "number": "11112345678",
+                        "type": "mobile"
+                    },
+                    {
+                        "number": "2222349uio32",
+                        "type": "home"
+                    },
+                    {
+                        "number": "3331234567",
+                        "type": "work"
+                    }
+                ],
+                "email": "oneContact@mail.com"
+            },
+            {
+                "given": "aaSecondQAContact",
+                "family": "SameLastName",
+                "phones": [
+                    {
+                        "number": "44441234567",
+                        "type": "mobile"
+                    }
+                ],
+                "email": "qaemail@email.com"
+            }
+        ],
+         "emails": [
+            {
+                "login": "dwqa01@gmail.com",
+                "password": "crushit!",
+                "service": "Gmail",
+                "sync_email": true,
+                "sync_contacts": true,
+                "sync_calendar": true
+            },
+            {
+                "login": "dwqa02@gmail.com",
+                "password": "crushit!",
+                "service": "Gmail",
+                "sync_email": true,
+                "sync_contacts": true,
+                "sync_calendar": true
+            },
+            {
+                "login": "dwqa01@hotmail.com",
+                "password": "crushit!",
+                "service": "Hotmail",
+                "sync_email": true
+            },
+            {
+                "login": "dwqa01@yahoo.com",
+                "password": "crushit!",
+                "service": "Yahoo",
+                "sync_email": true,
+                "display_name": "MyMainYahoo"
+            },
+            {
+                "login": "dwqa01@aol.com",
+                "password": "crushit!",
+                "service": "Aol",
+                "sync_email": true
+            }
+        ],
+         "applications": [
+            {
+                "title": "BugVillage",
+                "id": "https: //s3.amazonaws.com/media.dashwire.com/dashconfig/captivate/apks/com.glu.android.bugvillage.apk",
+                "src": "/images/applications/BugVillage_48x48.png",
+                "smSrc": "/images/applications/BugVillage_30x30.png",
+                "size": 1,
+                "className": "bugVillage"
+            },
+            {
+                "title": "GameWorld",
+                "id": "https: //s3.amazonaws.com/media.dashwire.com/dashconfig/captivate/apks/com.openfeint.spotlightwla.apk",
+                "src": "/images/applications/gameworld_70x70.png",
+                "smSrc": "https: //s3.amazonaws.com/media.dashconfig.com/images/appLogos/small/applications_small.png",
+                "size": 1,
+                "className": "gameWorld"
+            }
+        ] 
+}
